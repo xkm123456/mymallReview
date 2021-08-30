@@ -2,7 +2,7 @@
   <div class="tabbar-item" @click="change_path">
     <div v-if="isActive"><slot name="tabbar-item-img-active"></slot></div>
     <div v-else><slot name="tabbar-item-img"></slot></div>
-    <div :class="{active:isActive}"><slot name="tabbar-item-title"></slot></div>
+    <div :class="{activeTitle:isActive}"><slot name="tabbar-item-title"></slot></div>
   </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {
     margin-bottom: -1px;
   }
 
-  .active{
+  .activeTitle{
     color: #FF1493;
   }
 </style>

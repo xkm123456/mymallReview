@@ -33,5 +33,7 @@ export default {
         width: 60px;
     }
 
-    
+    .center{
+        display: flex;
+    }
 </style>
